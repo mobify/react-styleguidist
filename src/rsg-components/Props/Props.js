@@ -2,6 +2,8 @@ import React, { Component, PropTypes } from 'react';
 import trim from 'lodash/trim';
 import Markdown from 'rsg-components/Markdown';
 
+import s from './Props.css';
+
 /* eslint-disable react/prop-types */
 
 export let Code = ({ className = '', children }) => {
@@ -22,14 +24,31 @@ export default class Props extends Component {
 		for (let name in props) {
 			let prop = props[name];
 			rows.push(
-				<tr key={name}>
-					<td><Code>{name}</Code></td>
-					<td><Code>{this.renderType(getType(prop))}</Code></td>
-					<td>{this.renderDefault(prop)}</td>
-					<td>{this.renderDescription(prop)}</td>
-				</tr>
+				<div class="code-item {name}" style="display: block; padding: 10px 15px; border-bottom: 1px solid #ccc; margin: 5px 10px;">
+
+					<div class="code-item-heading code-item-name" style="padding: 5px 0px;">
+                        <div class="code-item-label" style="font-size: 9px; color: #ddd; line-height: 1.2;">Name</div>
+                        <div class="code-item-value">{name}</div>
+                    </div>
+
+                    <div class="code-item-heading code-item-type">
+                        <div class="code-item-label" style="font-size: 9px; color: #ddd; line-height: 1.2;">Type</div>
+                        <div class="code-item-value">{this.renderType(getType(prop))}</div>
+                    </div>
+
+                    <div class="code-item-heading code-item-default">
+                        <div class="code-item-label" style="font-size: 9px; color: #ddd; line-height: 1.2;">Default</div>
+                        <div class="code-item-value">{this.renderDefault(prop)}</div>
+                    </div>
+
+
+                    <div class="code-item-heading code-item-description">
+                        <div class="code-item-value">{this.renderDescription(prop)}}</div>
+                    </div>
+				</div>
 			);
-		}
+	    }
+
 		return rows;
 	}
 
@@ -150,19 +169,9 @@ export default class Props extends Component {
 
 	renderTable(props) {
 		return (
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Type</th>
-						<th>Default</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
+			<div class="code-docs-stuff"
 					{this.renderRows(props)}
-				</tbody>
-			</table>
+			</div>
 		);
 	}
 
