@@ -5,7 +5,7 @@ import Icon from 'rsg-components/Icon';
 
 const renderSearchHeader = (searchTerm, onInputMount, onSearchTermChange, onSearchBlur) => {
 	return (
-		<div className="rsg-components__search-header fixed">
+		<div className="rsg-components__search-header">
 			<header className="w-content-ns bg-white flex justify-start items-center h4 bb b--black-20">
 				<div className="w-100 mw8 center ph2">
 					<h1 className="ma0 f2">Components</h1>
@@ -32,7 +32,7 @@ const renderSearchHeader = (searchTerm, onInputMount, onSearchTermChange, onSear
 const renderPlainHeader = () => {
 	return (
 		<div className="rsg-components__plain-header">
-			<header className="fixed w-100 bg-white h3 bb b--black-20">
+			<header className="w-100 bg-white h3 bb b--black-20">
 				<div className="w-100 h-100 mw8 flex items-center justify-end center ph3">
 					<a href="#" className="db flex items-center justify-center" style={{ height: '44px', width: '44px' }}>
 						<Icon glyph="close" />
