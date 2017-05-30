@@ -23,6 +23,11 @@
 }
 
 .root :global .rsg-code-props-table-row td:nth-child(3) code {
+    /**
+	 * Prevent the prop's default cell from growing too large and making it
+	 * unreadable! It won't be readable very easily for large defaults, but it
+	 * can be copy/pasted. Open to other ideas!
+	 */
     display: block;
     overflow: hidden;
     max-width: 60px;
