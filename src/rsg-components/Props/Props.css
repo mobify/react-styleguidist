@@ -1,15 +1,32 @@
-.root :global .rsg-code-props-table-heading-row th:nth-child(2){
-    display: none;
+.root :global .rsg-code-props-table {
+    font-size: 12px;
 }
 
-.root :global .rsg-code-props-table-heading-row th:nth-child(3){
-    display: none;
+.root :global .rsg-code-props-table-heading-row th {
+    padding: 12px 0;
+
+    font-size: 10px;
+    text-align: left;
+    text-transform: uppercase;
 }
 
-.root :global .rsg-code-props-table-row td:nth-child(2){
-    display: none;
+.root :global .rsg-code-props-table-row {
+    border-top: 1px solid rgba(0, 0, 0, 0.03);
 }
 
-.root :global .rsg-code-props-table-row td:nth-child(3){
-    display: none;
+.root :global .rsg-code-props-table-row td {
+    padding: 6px 0;
+}
+
+.root :global .rsg-code-props-table-row td:not(:last-of-type) {
+    padding-right: 12px;
+}
+
+.root :global .rsg-code-props-table-row td:nth-child(3) code {
+    display: block;
+    overflow: hidden;
+    max-width: 60px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
