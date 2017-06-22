@@ -30,8 +30,4 @@
 	 */
     display: block;
     overflow: hidden;
-    max-width: 60px;
-
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
