@@ -10,7 +10,7 @@
     text-transform: uppercase;
 }
 
-.root :global .rsg-code-props-table-row {
+.root :global .rsg-code-props-table-row--top {
     border-top: 1px solid rgba(0, 0, 0, 0.03);
 }
 
