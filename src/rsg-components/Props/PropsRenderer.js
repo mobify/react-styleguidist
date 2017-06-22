@@ -9,19 +9,20 @@ function renderRows(props) {
 	let rows = [];
 	for (let name in props) {
 		let prop = props[name];
-		rows.push(
+		const topRow = (
 			<tr className="rsg-code-props-table-row rsg-code-props-table-row--top" key={name}>
 				<td><Code>{name}</Code></td>
 				<td><Code>{renderType(getType(prop))}</Code></td>
 				<td>{renderDefault(prop)}</td>
 			</tr>
-		);
-        rows.push(
+		)
+		const bottomRow = (
 			<tr className="rsg-code-props-table-row rsg-code-props-table-row--bottom" key={name}>
 				<td>{renderDescription(prop)}</td>
                 <td colspan="2"></td>
 			</tr>
-		);
+		)
+		rows.push(topRow, bottomRow);
 	}
 	return rows;
 }
@@ -149,7 +150,6 @@ export default function PropsRenderer({ props }) {
 					<th>Name</th>
 					<th>Type</th>
 					<th>Default</th>
-					<th>Description</th>
 				</tr>
 			</thead>
 			<tbody>
