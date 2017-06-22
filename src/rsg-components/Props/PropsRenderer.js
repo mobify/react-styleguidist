@@ -10,14 +10,14 @@ function renderRows(props) {
 	for (let name in props) {
 		let prop = props[name];
 		const topRow = (
-			<tr className="rsg-code-props-table-row rsg-code-props-table-row--top" key={name}>
+			<tr className="rsg-code-props-table-row rsg-code-props-table-row--top" key={`${name}-top`}>
 				<td><Code>{name}</Code></td>
 				<td><Code>{renderType(getType(prop))}</Code></td>
 				<td>{renderDefault(prop)}</td>
 			</tr>
 		)
 		const bottomRow = (
-			<tr className="rsg-code-props-table-row rsg-code-props-table-row--bottom" key={name}>
+			<tr className="rsg-code-props-table-row rsg-code-props-table-row--bottom" key={`${name}-bottom`}>
 				<td>{renderDescription(prop)}</td>
                 <td colspan="2"></td>
 			</tr>
