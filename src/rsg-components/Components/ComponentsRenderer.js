@@ -6,7 +6,7 @@ import Icon from 'rsg-components/Icon';
 const renderSearchHeader = (searchTerm, onInputMount, onSearchTermChange, onSearchBlur) => {
 	return (
 		<div className="rsg-components__search-header">
-			<div className="bg-white w-100 pv1 bb b--black-20">
+			<div className="u-bg-color-neutral-00 u-width-full u-padding-top u-padding-bottom u-border">
 				<div className="mw8 center ph2">
 					<input
 						ref={onInputMount}
