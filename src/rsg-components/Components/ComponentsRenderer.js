@@ -6,17 +6,19 @@ import Icon from 'rsg-components/Icon';
 const renderSearchHeader = (searchTerm, onInputMount, onSearchTermChange, onSearchBlur) => {
 	return (
 		<div className="rsg-components__search-header">
-			<div className="u-background-neutral-00 u-width-full u-padding-top u-padding-bottom u-border">
-				<div className="mw8 center ph2">
-					<input
-						ref={onInputMount}
-						className="db w-100 ph1 h2_5 bw1 br1 b--solid b--black-20 lh-input trans-all shadow-hover"
-						placeholder="What Are You Looking For?"
-						onChange={onSearchTermChange}
-						value={searchTerm}
-						type="search"
-						onBlur={onSearchBlur}
-					/>
+			<div className="c-contain">
+				<div className=" u-background-neutral-00 u-width-full u-padding-top u-padding-bottom u-border">
+					<div className="mw8 center ph2">
+						<input
+							ref={onInputMount}
+							className="db w-100 ph1 h2_5 bw1 br1 b--solid b--black-20 lh-input trans-all shadow-hover"
+							placeholder="What Are You Looking For?"
+							onChange={onSearchTermChange}
+							value={searchTerm}
+							type="search"
+							onBlur={onSearchBlur}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
