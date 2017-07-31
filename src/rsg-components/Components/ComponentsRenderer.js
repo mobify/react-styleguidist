@@ -35,9 +35,9 @@ const renderPlainHeader = () => {
 };
 
 const ComponentsRenderer = ({ isListPage, searchTerm, components, sections, onInputMount, onSearchTermChange, onSearchBlur }) => {
-	const componentSectionClasses = classNames('rsg-components__component-section w-100 mw8 center ph2', {
+	const componentSectionClasses = classNames('rsg-components__component-section', {
 		'pt-appbar-searchbar': isListPage,
-		'pt-appbar': !isListPage,
+		'pt-appbar c-contain': !isListPage,
 	});
 	const classes = classNames('rsg-components', {
 		'u-background-neutral-00 u-fixed u-place-top u-place-end u-place-bottom u-place-start u-z4 u-block-scroll': !isListPage,
