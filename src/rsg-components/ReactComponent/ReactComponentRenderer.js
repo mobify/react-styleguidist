@@ -31,7 +31,7 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 			<article className="cf u-margin-top-xl u-flexbox u-flexbox-gutters">
 				{designMarkdown &&
 					<div className={designClasses}>
-						<h2>Design</h2>
+						<h2 className="u-margin-top u-margin-bottom">Design</h2>
 						{hasSlice &&
 							<div>
 								<h4 className="ReactStyleguidist-Markdown__h4 ReactStyleguidist-common__font">
@@ -45,7 +45,7 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 				}
 				{props &&
 					<div className={codeClasses}>
-						<h2>Code</h2>
+						<h2 className="u-margin-top u-margin-bottom">Code</h2>
 						{description}
 						{props}
 						{examples}
