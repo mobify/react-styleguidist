@@ -148,6 +148,7 @@ export default function PropsRenderer({ props }) {
 					<th>Name</th>
 					<th>Type</th>
 					<th>Default</th>
+					<th>Description</th>
 				</tr>
 			</thead>
 			<tbody>
