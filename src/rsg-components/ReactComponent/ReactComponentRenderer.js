@@ -7,12 +7,12 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 	const rendererClass = 'rsg-react-component__renderer';
 	const containerClass = 'rsg-react-component__renderer-container';
 
-	const designClasses = classNames(containerClass, 'pr3-ns w-100 w-50-ns', {
+	const designClasses = classNames(containerClass, 'u-flex u-width-1of2', {
 		fl: !isSingleColumn,
 		center: isSingleColumn,
 	});
 
-	const codeClasses = classNames(containerClass, 'pl3-ns w-100 w-50-ns', {
+	const codeClasses = classNames(containerClass, 'u-flex u-width-1of2', {
 		fl: !isSingleColumn,
 		center: isSingleColumn,
 	});
@@ -28,7 +28,7 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 			<h1 id={name}>
 				{name}
 			</h1>
-			<article className="cf u-margin-top-xl">
+			<article className="cf u-margin-top-xl u-flexbox u-flexbox-gutters">
 				{designMarkdown &&
 					<div className={designClasses}>
 						<h2>Design</h2>
