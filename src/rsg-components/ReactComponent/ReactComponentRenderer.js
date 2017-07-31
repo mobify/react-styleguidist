@@ -28,7 +28,7 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 			<h1 id={name}>
 				{name}
 			</h1>
-			<article className="cf">
+			<article className="cf u-margin-top-xl">
 				{designMarkdown &&
 					<div className={designClasses}>
 						<h2>Design</h2>
