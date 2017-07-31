@@ -40,7 +40,7 @@ const ComponentsRenderer = ({ isListPage, searchTerm, components, sections, onIn
 		'pt-appbar': !isListPage,
 	});
 	const classes = classNames('rsg-components', {
-		'bg-white': !isListPage,
+		'u-background-neutral-00 u-fixed u-place-top u-place-end u-place-bottom u-place-start u-z4 u-block-scroll': !isListPage,
 	});
 
 	return (
