@@ -17,9 +17,9 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 
 	return sidebar ?
 		<a href={`#!/${name}`} className={`${rendererClass} c-card c--link c--xlarge-space`}>
-			<h3 className="c-card__heading c-heading c--h3">
+			<h2 className="c-card__heading c-heading c--h3">
 				{name}
-			</h3>
+			</h2>
 		</a>
 	:
 		<div className={rendererClass}>
@@ -32,9 +32,9 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 						<h2 className="u-margin-top u-margin-bottom">Design</h2>
 						{hasSlice &&
 							<div>
-								<h4 className="ReactStyleguidist-Markdown__h4 ReactStyleguidist-common__font">
+								<h3 className="ReactStyleguidist-Markdown__h4 ReactStyleguidist-common__font">
 									Exported Slice
-								</h4>
+								</h3>
 								<img className="mb2" src={`${imagePath}${nameFallback}/assets/slice.png`} />
 							</div>
 						}
