@@ -8,11 +8,11 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 	const containerClass = 'rsg-react-component__renderer-container';
 
 	const designClasses = classNames(containerClass, 'u-width-1of2', {
-		u-margin-center: isSingleColumn,
+		'u-margin-center': isSingleColumn,
 	});
 
 	const codeClasses = classNames(containerClass, 'u-width-1of2', {
-		u-margin-center: isSingleColumn,
+		'u-margin-center': isSingleColumn,
 	});
 
 	return sidebar ?
