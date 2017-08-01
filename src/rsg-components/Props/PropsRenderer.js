@@ -11,7 +11,6 @@ function renderRows(props) {
 		let prop = props[name];
 		rows.push(
 			<tr className="rsg-code-props-table-row rsg-code-props-table-row" key={name}>
-				<td><Code>{name}</Code></td>
 				<td><Code>{name}</Code>
 					<div className="rsg-code-props-table-description">
 						{renderDescription(prop)}</div>
