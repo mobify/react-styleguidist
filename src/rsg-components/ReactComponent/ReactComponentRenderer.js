@@ -32,9 +32,9 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 						<h2 className="u-margin-top u-margin-bottom">Design</h2>
 						{hasSlice &&
 							<div>
-								<h3 className="ReactStyleguidist-Markdown__h4 ReactStyleguidist-common__font">
+								<h4 className="ReactStyleguidist-Markdown__h4 ReactStyleguidist-common__font">
 									Exported Slice
-								</h3>
+								</h4>
 								<img className="mb2" src={`${imagePath}${nameFallback}/assets/slice.png`} />
 							</div>
 						}
