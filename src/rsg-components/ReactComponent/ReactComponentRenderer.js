@@ -7,14 +7,14 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 	const rendererClass = 'rsg-react-component__renderer';
 	const containerClass = 'rsg-react-component__renderer-container';
 
-	const designClasses = classNames(containerClass, 'u-flex u-width-1of2', {
+	const designClasses = classNames(containerClass, 'u-width-1of2', {
 		fl: !isSingleColumn,
-		center: isSingleColumn,
+		foo: isSingleColumn,
 	});
 
-	const codeClasses = classNames(containerClass, 'u-flex u-width-1of2', {
+	const codeClasses = classNames(containerClass, 'u-width-1of2', {
 		fl: !isSingleColumn,
-		center: isSingleColumn,
+		foo: isSingleColumn,
 	});
 
 	return sidebar ?
