@@ -7,11 +7,11 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 	const rendererClass = 'rsg-react-component__renderer';
 	const containerClass = 'rsg-react-component__renderer-container';
 
-	const designClasses = classNames(containerClass, '', {
+	const designClasses = classNames(containerClass, 'rsg-react-component__markdown-content', {
 		'u-margin-center': isSingleColumn,
 	});
 
-	const codeClasses = classNames(containerClass, '', {
+	const codeClasses = classNames(containerClass, 'rsg-react-component__markdown-content', {
 		'u-margin-center': isSingleColumn,
 	});
 
