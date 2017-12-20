@@ -12,18 +12,16 @@ const renderSearchHeader = (searchTerm, onInputMount, onSearchTermChange, onSear
 				</div>
 			</header>
 
-			<div className="bg-white w-100 pv1 bb b--black-20">
-				<div className="mw8 center ph2">
-					<input
-						ref={onInputMount}
-						className="db w-100 ph1 h2_5 bw1 br1 b--solid b--black-20 lh-input trans-all shadow-hover"
-						placeholder="What Are You Looking For?"
-						onChange={onSearchTermChange}
-						value={searchTerm}
-						type="search"
-						onBlur={onSearchBlur}
-					/>
-				</div>
+			<div className="u-padding-top u-padding-bottom">
+				<input
+					ref={onInputMount}
+					className="db w-100 ph1 h2_5 bw1 br1 b--solid b--black-20 lh-input trans-all shadow-hover"
+					placeholder="What Are You Looking For?"
+					onChange={onSearchTermChange}
+					value={searchTerm}
+					type="search"
+					onBlur={onSearchBlur}
+				/>
 			</div>
 		</div>
 	);
