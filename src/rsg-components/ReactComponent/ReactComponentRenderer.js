@@ -18,7 +18,7 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 	});
 
 	return sidebar ?
-		<a href={`#!/${name}`} className={`${rendererClass} u-text-no-decoration u-margin-top u-padding u-background-neutral-10 u-block u-neutral-70`}>
+		<a href={`#!/${name}`} className={`${rendererClass} c-card c--link u-text-no-decoration u-padding-xl u-block u-neutral-70`}>
 			<h3>
 				{name}
 			</h3>
