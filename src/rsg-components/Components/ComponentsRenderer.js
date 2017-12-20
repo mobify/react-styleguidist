@@ -44,7 +44,7 @@ const renderPlainHeader = () => {
 };
 
 const ComponentsRenderer = ({ isListPage, searchTerm, components, sections, onInputMount, onSearchTermChange, onSearchBlur }) => {
-	const componentSectionClasses = classNames('rsg-components__component-section w-100 mw8 center ph2', {
+	const componentSectionClasses = classNames('rsg-components__component-section', {
 		'pt-appbar-searchbar': isListPage,
 		'pt-appbar': !isListPage,
 	});

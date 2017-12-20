@@ -18,8 +18,8 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 	});
 
 	return sidebar ?
-		<a href={`#!/${name}`} className={`${rendererClass} bg-white db b--black-30 br2 ba pa4 mt2 no-underline trans-all shadow-hover`}>
-			<h3 className="ma0 black f3 fw4">
+		<a href={`#!/${name}`} className={`${rendererClass} u-text-no-decoration u-margin-top u-padding u-background-neutral-10 u-block u-neutral-70`}>
+			<h3>
 				{name}
 			</h3>
 		</a>
