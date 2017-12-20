@@ -41,7 +41,7 @@ const ComponentsRenderer = ({ isListPage, searchTerm, components, sections, onIn
 		'pt-appbar': !isListPage,
 	});
 	const classes = classNames('rsg-components', {
-		'bg-white': !isListPage,
+		'full-screen': !isListPage,
 	});
 
 	return (
