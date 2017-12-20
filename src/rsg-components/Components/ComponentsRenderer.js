@@ -34,7 +34,7 @@ const renderPlainHeader = () => {
 };
 
 const ComponentsRenderer = ({ isListPage, searchTerm, components, sections, onInputMount, onSearchTermChange, onSearchBlur }) => {
-	const componentSectionClasses = classNames('rsg-components__component-section', {
+	const componentSectionClasses = classNames('rsg-components__component-section c-contain u-margin-top-xl', {
 		'pt-appbar-searchbar': isListPage,
 		'pt-appbar': !isListPage,
 	});
