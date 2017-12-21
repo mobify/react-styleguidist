@@ -5,7 +5,7 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 	const isSingleColumn = !designMarkdown || !props;
 
 	const rendererClass = 'rsg-react-component__renderer';
-	const containerClass = 'rsg-react-component__renderer-container u-margin-center';
+	const containerClass = 'rsg-react-component__renderer-container u-width-full u-margin-center';
 
 	const designClasses = classNames(containerClass);
 
