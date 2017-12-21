@@ -25,10 +25,10 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 			<article className="u-margin-top-xl c-grid c--2up">
 				{designMarkdown &&
 					<div className={designClasses}>
-						<h2 class="u-margin-top u-margin-bottom">Design</h2>
+						<h2 className="u-margin-top u-margin-bottom">Design</h2>
 						{hasSlice &&
 							<div>
-								<h4 className="ReactStyleguidist-Markdown__h4 ReactStyleguidist-common__font">
+								<h4 className="ReactStyleguidist-Markdown__h4 ReactStyleguidist-common__font u-margin-top-lg">
 									Exported Slice
 								</h4>
 								<img className="mb2" src={`${imagePath}${nameFallback}/assets/slice.png`} />
@@ -39,7 +39,7 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 				}
 				{props &&
 					<div className={codeClasses}>
-						<h2 class="u-margin-top u-margin-bottom">Code</h2>
+						<h2 className="u-margin-top u-margin-bottom">Code</h2>
 						{description}
 						{props}
 						{examples}

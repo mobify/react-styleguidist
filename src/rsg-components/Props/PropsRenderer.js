@@ -17,8 +17,8 @@ function renderRows(props) {
 						{renderDescription(prop)}
 					</div>
 				</td>
-				<td><Code>{renderType(getType(prop))}</Code></td>
-				<td>{renderDefault(prop)}</td>
+				<td className="u-border-none"><Code>{renderType(getType(prop))}</Code></td>
+				<td className="u-border-none">{renderDefault(prop)}</td>
 			</tr>
 		);
 	}
@@ -142,7 +142,7 @@ function renderShape(props) {
 
 export default function PropsRenderer({ props }) {
 	return (
-		<table className={s.root + ' rsg-code-props-table u-margin-top u-margin-bottom'}>
+		<table className={s.root + ' rsg-code-props-table u-margin-top u-margin-bottom u-neutral-50'}>
 			<thead>
 				<tr className="rsg-code-props-table-heading-row">
 					<th className="u-border-none">Name</th>
