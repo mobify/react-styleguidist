@@ -9,7 +9,6 @@ const renderSearchHeader = (searchTerm, onInputMount, onSearchTermChange, onSear
 			<div className="u-padding-top u-padding-bottom">
 				<input
 					ref={onInputMount}
-					className="db w-100 ph1 h2_5 bw1 br1 b--solid b--black-20 lh-input trans-all shadow-hover"
 					placeholder="What Are You Looking For?"
 					onChange={onSearchTermChange}
 					value={searchTerm}
@@ -34,10 +33,7 @@ const renderPlainHeader = () => {
 };
 
 const ComponentsRenderer = ({ isListPage, searchTerm, components, sections, onInputMount, onSearchTermChange, onSearchBlur }) => {
-	const componentSectionClasses = classNames('rsg-components__component-section c-contain u-margin-top-xl', {
-		'pt-appbar-searchbar': isListPage,
-		'pt-appbar': !isListPage,
-	});
+	const componentSectionClasses = classNames('rsg-components__component-section c-contain u-margin-top-xl');
 	const classes = classNames('rsg-components', {
 		'full-screen': !isListPage,
 	});
