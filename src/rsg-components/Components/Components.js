@@ -4,7 +4,7 @@ import Sections from 'rsg-components/Sections';
 import ComponentsRenderer from 'rsg-components/Components/ComponentsRenderer';
 
 const KEY_CODES = {
-	C_KEY: 67,
+	C_KEY: 99,
 	ESC_KEY: 27,
 	ENTER_KEY: 13,
 };
