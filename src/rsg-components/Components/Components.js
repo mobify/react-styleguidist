@@ -4,7 +4,7 @@ import Sections from 'rsg-components/Sections';
 import ComponentsRenderer from 'rsg-components/Components/ComponentsRenderer';
 
 const KEY_CODES = {
-	F_KEY: 102,
+	C_KEY: 67,
 	ESC_KEY: 27,
 	ENTER_KEY: 13,
 };
@@ -49,7 +49,7 @@ export default class Components extends Component {
 	}
 
 	handleKeyPress(ev) {
-		if (ev.keyCode === KEY_CODES.F_KEY && !searchFocused) {
+		if (ev.keyCode === KEY_CODES.C_KEY && !searchFocused) {
 			searchFocused = true;
 			ev.preventDefault();
 			this.state.searchInput && this.state.searchInput.focus();

@@ -9,7 +9,7 @@ const renderSearchHeader = (searchTerm, onInputMount, onSearchTermChange, onSear
 			<div className="u-padding-top u-padding-bottom">
 				<input
 					ref={onInputMount}
-					placeholder="What Are You Looking For?"
+					placeholder="Type 'C' to Search Components"
 					onChange={onSearchTermChange}
 					value={searchTerm}
 					type="search"
