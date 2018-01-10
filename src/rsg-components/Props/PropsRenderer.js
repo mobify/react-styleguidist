@@ -11,14 +11,14 @@ function renderRows(props) {
 		let prop = props[name];
 		rows.push(
 			<tr className="rsg-code-props-table-row rsg-code-props-table-row" key={name}>
-				<td>
+				<td className="u-border-none">
 					<Code>{name}</Code>
 					<div className="rsg-code-props-table-description">
 						{renderDescription(prop)}
 					</div>
 				</td>
-				<td><Code>{renderType(getType(prop))}</Code></td>
-				<td>{renderDefault(prop)}</td>
+				<td className="u-border-none"><Code>{renderType(getType(prop))}</Code></td>
+				<td className="u-border-none">{renderDefault(prop)}</td>
 			</tr>
 		);
 	}
@@ -142,12 +142,12 @@ function renderShape(props) {
 
 export default function PropsRenderer({ props }) {
 	return (
-		<table className={s.root + ' rsg-code-props-table'}>
+		<table className={s.root + ' rsg-code-props-table u-margin-top u-margin-bottom u-neutral-50'}>
 			<thead>
 				<tr className="rsg-code-props-table-heading-row">
-					<th>Name</th>
-					<th>Type</th>
-					<th>Default</th>
+					<th className="u-border-none">Name</th>
+					<th className="u-border-none">Type</th>
+					<th className="u-border-none">Default</th>
 				</tr>
 			</thead>
 			<tbody>

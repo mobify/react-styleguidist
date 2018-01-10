@@ -5,21 +5,15 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 	const isSingleColumn = !designMarkdown || !props;
 
 	const rendererClass = 'rsg-react-component__renderer';
-	const containerClass = 'rsg-react-component__renderer-container';
+	const containerClass = 'rsg-react-component__renderer-container u-width-full u-margin-center';
 
-	const designClasses = classNames(containerClass, 'pr3-ns w-100 w-50-ns', {
-		fl: !isSingleColumn,
-		center: isSingleColumn,
-	});
+	const designClasses = classNames(containerClass);
 
-	const codeClasses = classNames(containerClass, 'pl3-ns w-100 w-50-ns', {
-		fl: !isSingleColumn,
-		center: isSingleColumn,
-	});
+	const codeClasses = classNames(containerClass);
 
 	return sidebar ?
-		<a href={`#!/${name}`} className={`${rendererClass} bg-white db b--black-30 br2 ba pa4 mt2 no-underline trans-all shadow-hover`}>
-			<h3 className="ma0 black f3 fw4">
+		<a href={`#!/${name}`} className={`${rendererClass} c-card c--link u-text-no-decoration u-padding-xl u-block u-neutral-70`}>
+			<h3>
 				{name}
 			</h3>
 		</a>
@@ -28,10 +22,10 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 			<h1 id={name}>
 				{name}
 			</h1>
-			<article className="cf">
+			<article className="u-margin-top-xl c-grid c--2up">
 				{designMarkdown &&
 					<div className={designClasses}>
-						<h2>Design</h2>
+						<h2 className="u-margin-top u-margin-bottom">Design</h2>
 						{hasSlice &&
 							<div>
 								<h4 className="ReactStyleguidist-Markdown__h4 ReactStyleguidist-common__font">
@@ -45,7 +39,7 @@ const ReactComponentRenderer = ({ imagePath, hasSlice, nameFallback, designMarkd
 				}
 				{props &&
 					<div className={codeClasses}>
-						<h2>Code</h2>
+						<h2 className="u-margin-top u-margin-bottom">Code</h2>
 						{description}
 						{props}
 						{examples}

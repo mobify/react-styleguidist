@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
 const StyleGuideRenderer = ({ components }) => (
-	<div className="rsg-style-guide pb3">
+	<div className="rsg-style-guide">
 		{components}
 	</div>
 );
