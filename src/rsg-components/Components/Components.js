@@ -49,7 +49,7 @@ export default class Components extends Component {
 	}
 
 	handleKeyPress(ev) {
-		if (ev.keyCode === KEY_CODES.C_KEY && !searchFocused) {
+		if (ev.keyCode === KEY_CODES.C_KEY && ev.target.tagName !== 'INPUT' && !searchFocused) {
 			searchFocused = true;
 			ev.preventDefault();
 			this.state.searchInput && this.state.searchInput.focus();
